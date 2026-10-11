@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildflower ID — A Photo Guide to Wildflowers</title>
+  <meta name="description" content="A photo guide to 61 wildflowers of California, garden and introduced flowers, and the Canadian Rockies: ID features, bloom calendars from iNaturalist records, look-alikes, flower anatomy, where to see wildflowers, and a quiz.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top"><img src="assets/img/logo.svg" alt=""><span><span class="en">Wildflower ID</span><span class="zh">野花识别</span></span></a>
+    <nav class="top-nav" aria-label="Sections">
+      <a href="#atlas-sec"><span class="en">Flowers</span><span class="zh">花卉图鉴</span></a>
+      <a href="#calendar-sec"><span class="en">Bloom calendar</span><span class="zh">花期日历</span></a>
+      <a href="#pairs-sec"><span class="en">Look-alikes</span><span class="zh">易混花卉</span></a>
+      <a href="#basics"><span class="en">Flower basics</span><span class="zh">花的基础</span></a>
+      <a href="#where-sec"><span class="en">Where &amp; tools</span><span class="zh">赏花与工具</span></a>
+      <a href="#quiz-sec"><span class="en">Quiz</span><span class="zh">小测验</span></a>
+    </nav>
+    <button id="lang-toggle" class="icon-btn" type="button" title="Switch to Chinese">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+      <span class="lbl">ZH</span>
+    </button>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <div class="eyebrow"><span class="en">A wildflower field guide</span><span class="zh">野花识别图鉴</span></div>
+      <h1><span class="en">Wildflower identification</span><span class="zh">野花识别</span></h1>
+      <p class="lead"><span class="en">Wildflowers of California's hills, garden and roadside flowers, and the alpine meadows of the Canadian Rockies. Each flower has photos, ID features and a bloom calendar built from iNaturalist records. Learn how flowers are built, tell look-alikes apart, then test yourself.</span><span class="zh">收录加州山野的野花、园艺与路边常见花卉，以及加拿大落基山高山草甸的野花。每种花都有照片、识别要点和根据 iNaturalist 记录统计的花期。还可以学习花的结构、分辨易混花卉，最后做个小测验。</span></p>
+      <div class="stats" id="stats"></div>
+      <div class="btn-row">
+        <a class="btn primary" href="#atlas-sec"><span class="en">Browse the flowers</span><span class="zh">浏览花卉图鉴</span></a>
+        <button class="btn" type="button" id="now-btn"></button>
+      </div>
+    </div>
+    <div class="mosaic" id="mosaic"></div>
+  </section>
+
+  <!-- Atlas -->
+  <section class="block" id="atlas-sec">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><span class="en">Photo collection</span><span class="zh">图片集</span></div>
+        <h2><span class="en">The flowers</span><span class="zh">花卉图鉴</span></h2>
+        <p class="sec-desc"><span class="en">Filter by region, flower colour, status or family, or show only what is blooming this month. Open a card for photos, ID features, the bloom calendar and links.</span><span class="zh">可按地区、花色、来源类型或科筛选，也可以只看本月正在开的花。点击卡片查看照片、识别要点、花期和链接。</span></p>
+      </div>
+    </div>
+    <div class="toolbar" id="toolbar">
+      <label class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="atlas-search" type="search" data-ph-en="Search names, scientific names, features" data-ph-zh="搜索中英文名、学名或特征" placeholder="Search names, scientific names, features"></label>
+      <div class="seg" id="group-seg" role="tablist" aria-label="Region"></div>
+      <div class="filter-row">
+        <div class="chips" id="color-chips" aria-label="Flower colour"></div>
+        <div class="chips" id="status-chips" aria-label="Status"></div>
+        <select id="family-select" class="select" aria-label="Family"></select>
+        <button type="button" class="toggle" id="now-toggle" aria-pressed="false"></button>
+        <span class="count" id="atlas-count"></span>
+        <button type="button" class="clear-btn hidden" id="atlas-clear"><span class="en">Clear filters</span><span class="zh">清除筛选</span></button>
+      </div>
+    </div>
+    <div class="card-grid" id="atlas"></div>
+  </section>
+
+  <!-- Bloom calendar -->
+  <section class="block" id="calendar-sec">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><span class="en">When to look</span><span class="zh">何时去看</span></div>
+        <h2><span class="en">Bloom calendar</span><span class="zh">花期日历</span></h2>
+        <p class="sec-desc"><span class="en">Darker cells mean more of the flower's iNaturalist records were made in bloom that month: California records for the California and garden groups, and the mountain national parks for the Canadian Rockies. Garden plants with few wild records use their typical garden season. Rows are sorted by peak month; the current month is highlighted.</span><span class="zh">颜色越深，表示该月 iNaturalist 记录中开花的比例越高：加州野花和园艺花卉使用加州的记录，落基山野花使用山区国家公园的记录。野外记录很少的园艺植物使用其在花园中的典型花期。按盛花月份排序，当前月份高亮显示。</span></p>
+      </div>
+    </div>
+    <div class="seg" id="cal-seg" role="tablist" aria-label="Region"></div>
+    <div class="calendar" id="calendar"></div>
+  </section>
+
+  <!-- Look-alikes -->
+  <section class="block" id="pairs-sec">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><span class="en">Compare</span><span class="zh">对比</span></div>
+        <h2><span class="en">Look-alikes</span><span class="zh">易混花卉</span></h2>
+        <p class="sec-desc"><span class="en">Pairs in this guide that are easy to confuse, and the features that tell them apart.</span><span class="zh">本指南中容易混淆的几组花，以及区分它们的关键特征。</span></p>
+      </div>
+    </div>
+    <div class="pairs" id="pairs"></div>
+  </section>
+
+  <!-- Flower basics -->
+  <section class="block" id="basics">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><span class="en">Reference</span><span class="zh">参考</span></div>
+        <h2><span class="en">Flower basics</span><span class="zh">花的基础知识</span></h2>
+        <p class="sec-desc"><span class="en">The parts of a flower, the two flower plans you will meet most often (daisies and peas), how flowers are arranged on the stem, and the families worth knowing.</span><span class="zh">花的各部分结构、最常见的两种花型（菊科头状花和豆科蝶形花）、花在茎上的排列方式，以及值得认识的几个科。</span></p>
+      </div>
+    </div>
+    <div class="diagrams">
+      <figure class="diagram">
+        <svg viewBox="0 64 420 260" role="img" aria-label="Parts of a flower">
+          <g class="dg-plant">
+            <line x1="210" y1="318" x2="210" y2="236" stroke="#5d9142" stroke-width="7" stroke-linecap="round"/>
+            <ellipse cx="210" cy="150" rx="46" ry="62" fill="#f8d3e4"/>
+            <path d="M192,234 Q150,230 128,206 Q165,212 200,228 Z" fill="#7fa34a"/>
+            <path d="M228,234 Q270,230 292,206 Q255,212 220,228 Z" fill="#7fa34a"/>
+            <ellipse cx="210" cy="232" rx="24" ry="9" fill="#6f9a3d"/>
+            <path d="M196,228 Q120,200 110,92 Q170,110 204,222 Z" fill="#ec8fb9"/>
+            <path d="M224,228 Q300,200 310,92 Q250,110 216,222 Z" fill="#ec8fb9"/>
+            <g stroke="#cfa640" stroke-width="2.5"><line x1="200" y1="214" x2="176" y2="132"/><line x1="220" y1="214" x2="244" y2="132"/><line x1="196" y1="220" x2="160" y2="150"/><line x1="224" y1="220" x2="260" y2="150"/></g>
+            <g fill="#f2c230" stroke="#b8862a"><ellipse cx="176" cy="129" rx="7" ry="4.5"/><ellipse cx="244" cy="129" rx="7" ry="4.5"/><ellipse cx="160" cy="147" rx="7" ry="4.5"/><ellipse cx="260" cy="147" rx="7" ry="4.5"/></g>
+            <ellipse cx="210" cy="210" rx="15" ry="19" fill="#a8d483" stroke="#5d9142" stroke-width="2"/>
+            <line x1="210" y1="192" x2="210" y2="113" stroke="#5d9142" stroke-width="4"/>
+            <ellipse cx="210" cy="108" rx="11" ry="6" fill="#e0a526" stroke="#a87a1c"/>
+          </g>
+          <g class="dg-lines" stroke="#8b8b8b" stroke-width="1"><line x1="74" y1="80" x2="124" y2="104"/><line x1="98" y1="125" x2="168" y2="129"/><line x1="98" y1="178" x2="189" y2="180"/><line x1="78" y1="220" x2="146" y2="219"/><line x1="98" y1="262" x2="190" y2="236"/><line x1="78" y1="300" x2="205" y2="296"/><line x1="324" y1="104" x2="222" y2="108"/><line x1="324" y1="152" x2="213" y2="152"/><line x1="324" y1="212" x2="226" y2="210"/></g>
+          <g class="dg-text">
+            <text x="10" y="84"><tspan class="en">Petal</tspan><tspan class="zh">花瓣</tspan></text>
+            <text x="10" y="129"><tspan class="en">Anther</tspan><tspan class="zh">花药</tspan></text>
+            <text x="10" y="182"><tspan class="en">Filament</tspan><tspan class="zh">花丝</tspan></text>
+            <text x="10" y="224"><tspan class="en">Sepal</tspan><tspan class="zh">萼片</tspan></text>
+            <text x="10" y="266"><tspan class="en">Receptacle</tspan><tspan class="zh">花托</tspan></text>
+            <text x="10" y="304"><tspan class="en">Pedicel</tspan><tspan class="zh">花梗</tspan></text>
+            <text x="330" y="108"><tspan class="en">Stigma</tspan><tspan class="zh">柱头</tspan></text>
+            <text x="330" y="156"><tspan class="en">Style</tspan><tspan class="zh">花柱</tspan></text>
+            <text x="330" y="216"><tspan class="en">Ovary</tspan><tspan class="zh">子房</tspan></text>
+          </g>
+        </svg>
+        <figcaption><b><span class="en">Parts of a flower</span><span class="zh">花的结构</span></b><span class="en">Stamen (male) = anther + filament. Pistil (female) = stigma + style + ovary; the ovary becomes the fruit. Sepals together form the calyx, petals the corolla.</span><span class="zh">雄蕊 = 花药 + 花丝；雌蕊 = 柱头 + 花柱 + 子房，子房发育成果实。所有萼片合称花萼，所有花瓣合称花冠。</span></figcaption>
+      </figure>
+
+      <figure class="diagram">
+        <svg viewBox="0 0 420 320" role="img" aria-label="A daisy flower head">
+          <g id="daisy-rays" fill="#f6c945" stroke="#d29c1e" stroke-width="1.2"></g>
+          <circle cx="120" cy="150" r="36" fill="#e59a2a" stroke="#b8641a"/>
+          <g id="daisy-disc" fill="#b8641a"></g>
+          <g transform="translate(270 40)">
+            <path d="M8,150 L8,46 Q8,18 16,10 L21,20 L26,10 L31,20 L36,10 Q44,18 44,46 L44,100 Q30,112 30,150 Z" fill="#f6c945" stroke="#d29c1e" stroke-width="1.2"/>
+            <ellipse cx="26" cy="160" rx="9" ry="12" fill="#a8d483" stroke="#5d9142"/>
+          </g>
+          <g transform="translate(345 40)">
+            <path d="M14,150 L14,70 L6,52 L14,58 L22,44 L30,58 L38,52 L30,70 L30,150 Z" fill="#e59a2a" stroke="#b8641a" stroke-width="1.2"/>
+            <path d="M22,62 L22,30 M22,32 Q16,24 14,18 M22,32 Q28,24 30,18" stroke="#8a5a1a" stroke-width="2" fill="none"/>
+            <ellipse cx="22" cy="160" rx="9" ry="12" fill="#a8d483" stroke="#5d9142"/>
+          </g>
+          <g transform="translate(270 240)">
+            <path d="M8,22 Q60,-14 112,22 Z" fill="#e59a2a" stroke="#b8641a"/>
+            <path d="M8,22 L112,22 Q102,58 60,64 Q18,58 8,22 Z" fill="#7fa34a"/>
+            <g fill="#6c9a3c" stroke="#4f7a2c"><path d="M14,24 L24,54 L34,24 Z"/><path d="M32,24 L44,60 L56,24 Z"/><path d="M54,24 L66,62 L78,24 Z"/><path d="M76,24 L88,58 L100,24 Z"/><path d="M96,24 L102,46 L108,24 Z"/></g>
+          </g>
+          
+          <g class="dg-text">
+            <text x="10" y="300"><tspan class="en">Top view of a head</tspan><tspan class="zh">头状花序俯视</tspan></text>
+            <text x="268" y="34" class="sm"><tspan class="en">Ray floret</tspan><tspan class="zh">舌状花</tspan></text>
+            <text x="338" y="34" class="sm"><tspan class="en">Disc floret</tspan><tspan class="zh">管状花</tspan></text>
+            <text x="268" y="236" class="sm"><tspan class="en">Side view: bracts</tspan><tspan class="zh">侧视：总苞片</tspan></text>
+          </g>
+        </svg>
+        <figcaption><b><span class="en">Daisy family: a head of many florets</span><span class="zh">菊科：许多小花组成的头状花序</span></b><span class="en">What looks like one flower is a head of tiny florets. Each "petal" is a ray floret; the centre is packed with disc florets; bracts hold the head from below.</span><span class="zh">看起来像一朵花，其实由许多小花组成。每一枚“花瓣”是一朵舌状花，中央挤满管状花，下面由总苞片托住。</span></figcaption>
+      </figure>
+
+      <figure class="diagram">
+        <svg viewBox="0 20 420 300" role="img" aria-label="A pea flower">
+          <line x1="210" y1="316" x2="210" y2="268" stroke="#5d9142" stroke-width="6" stroke-linecap="round"/>
+          <path d="M210,150 C120,150 112,40 210,36 C308,40 300,150 210,150 Z" fill="#8e6fd6"/>
+          <path d="M210,138 C172,132 172,92 210,88 C248,92 248,132 210,138 Z" fill="#efe9ff"/>
+          <path d="M210,128 C190,122 192,100 210,98 C228,100 230,122 210,128 Z" fill="#8e6fd6" opacity=".35"/>
+          <path d="M206,170 C150,150 112,190 134,222 C152,244 196,226 210,196 Z" fill="#a990e6"/>
+          <path d="M214,170 C270,150 308,190 286,222 C268,244 224,226 210,196 Z" fill="#a990e6"/>
+          <path d="M182,214 C196,252 236,256 250,226 C236,236 206,234 182,214 Z" fill="#d6c8f6" stroke="#8e6fd6"/>
+          <path d="M188,248 Q210,286 232,248 Q228,272 210,276 Q192,272 188,248 Z" fill="#7fa34a"/>
+          <g class="dg-lines" stroke="#8b8b8b" stroke-width="1"><line x1="96" y1="56" x2="150" y2="70"/><line x1="104" y1="190" x2="130" y2="194"/><line x1="300" y1="246" x2="244" y2="236"/><line x1="96" y1="272" x2="192" y2="262"/></g>
+          <g class="dg-text">
+            <text x="10" y="56"><tspan class="en">Banner</tspan><tspan class="zh">旗瓣</tspan></text>
+            <text x="10" y="194"><tspan class="en">Wing (×2)</tspan><tspan class="zh">翼瓣（2 枚）</tspan></text>
+            <text x="306" y="250"><tspan class="en">Keel</tspan><tspan class="zh">龙骨瓣</tspan></text>
+            <text x="10" y="276"><tspan class="en">Calyx</tspan><tspan class="zh">花萼</tspan></text>
+          </g>
+        </svg>
+        <figcaption><b><span class="en">Pea family: banner, wings and keel</span><span class="zh">豆科：旗瓣、翼瓣与龙骨瓣</span></b><span class="en">A large upright banner, two side wings and a boat-shaped keel that hides the stamens and pistil. Lupines, deerweed, clovers and sweetclover all have this plan.</span><span class="zh">上方是直立的大旗瓣，两侧各一枚翼瓣，下方船形的龙骨瓣包住雄蕊和雌蕊。羽扇豆、鹿草、车轴草和草木樨都是这种花型。</span></figcaption>
+      </figure>
+
+      <figure class="diagram">
+        <svg viewBox="0 0 480 330" role="img" aria-label="How flowers are arranged" id="inflo-svg"></svg>
+        <figcaption><b><span class="en">How flowers are arranged</span><span class="zh">花序类型</span></b><span class="en">Many flowers grow in groups called inflorescences. The arrangement is often a quicker clue than the flower itself.</span><span class="zh">很多花成群生长，称为花序。花序的排列方式往往比单朵花更容易作为识别线索。</span></figcaption>
+      </figure>
+    </div>
+
+    <h3 class="sub-h"><span class="en">Families to know</span><span class="zh">值得认识的科</span></h3>
+    <p class="sec-desc sub-desc"><span class="en">Learning a few families narrows things down fast. Tap a flower to open it.</span><span class="zh">认识几个常见的科，就能很快缩小范围。点击花名可打开详情。</span></p>
+    <div class="families" id="families"></div>
+  </section>
+
+  <!-- Where and tools -->
+  <section class="block" id="where-sec">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><span class="en">Explore</span><span class="zh">延伸</span></div>
+        <h2><span class="en">Where to see wildflowers</span><span class="zh">去哪里看野花</span></h2>
+        <p class="sec-desc"><span class="en">Classic places for each region and the usual peak season. Bloom timing changes a lot with winter rain and snowmelt, so check current reports before you go.</span><span class="zh">两个地区的经典赏花地点和通常的盛花期。花期受冬季降雨和融雪影响很大，出发前请查看最新花讯。</span></p>
+      </div>
+    </div>
+    <div class="place-cols">
+      <div><h3 class="sub-h first"><span class="en">California</span><span class="zh">加州</span></h3><div class="link-grid" id="places-ca"></div></div>
+      <div><h3 class="sub-h first"><span class="en">Canadian Rockies</span><span class="zh">加拿大落基山</span></h3><div class="link-grid" id="places-rockies"></div></div>
+    </div>
+    <h3 class="sub-h"><span class="en">Wildflower etiquette</span><span class="zh">赏花守则</span></h3>
+    <ol class="etiquette" id="etiquette"></ol>
+    <h3 class="sub-h"><span class="en">Apps and web tools</span><span class="zh">应用与在线工具</span></h3>
+    <div class="link-grid" id="tools"></div>
+  </section>
+
+  <!-- Quiz -->
+  <section class="block" id="quiz-sec">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow"><span class="en">Practice</span><span class="zh">练习</span></div>
+        <h2><span class="en">Name that flower</span><span class="zh">看图识花</span></h2>
+        <p class="sec-desc"><span class="en">A random photo from the guide: pick the right name. Choose a region to focus on.</span><span class="zh">随机展示一张图鉴中的照片，选出正确的名字。可以选择只练习某个地区。</span></p>
+      </div>
+    </div>
+    <div class="seg" id="quiz-seg" role="tablist" aria-label="Region"></div>
+    <div class="quiz" id="quiz">
+      <div class="quiz-photo"><img id="quiz-img" src="" alt="Quiz photo"><span class="quiz-credit" id="quiz-credit"></span></div>
+      <div class="quiz-side">
+        <div class="quiz-score" id="quiz-score"></div>
+        <div class="quiz-options" id="quiz-options"></div>
+        <div class="quiz-feedback" id="quiz-feedback" aria-live="polite"></div>
+        <div class="btn-row">
+          <button type="button" class="btn primary" id="quiz-next"><span class="en">Next photo</span><span class="zh">下一张</span></button>
+          <button type="button" class="btn hidden" id="quiz-open"><span class="en">Open this flower</span><span class="zh">查看这种花</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><a href="https://ychenzgithub.github.io/"><span class="en">More projects</span><span class="zh">更多项目</span></a> · <a href="https://ychenzgithub.github.io/TreeID/"><span class="en">Tree ID</span><span class="zh">树木识别</span></a> · <a href="https://github.com/ychenzgithub/WildflowerID"><span class="en">Source on GitHub</span><span class="zh">GitHub 源码</span></a></p>
+    <p><span class="en"><b class="n-col"></b> photos come from a personal study collection gathered from many websites; the source is shown when you enlarge one. The other <b class="n-inat"></b> photos are from iNaturalist under Creative Commons licences and are credited in the viewer. Bloom calendars are computed from iNaturalist observations.</span><span class="zh">其中 <b class="n-col"></b> 张照片来自个人学习时从各网站收集的图片，放大时会显示来源；其余 <b class="n-inat"></b> 张照片来自 iNaturalist，采用知识共享（CC）许可，放大时显示作者。花期日历根据 iNaturalist 观察记录统计。</span></p>
+  </footer>
+</main>
+
+<!-- Flower sheet -->
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+  <div class="sheet-card">
+    <div class="sheet-bar">
+      <button type="button" class="nav-btn" id="sheet-prev" aria-label="Previous flower">‹</button>
+      <button type="button" class="nav-btn" id="sheet-next" aria-label="Next flower">›</button>
+      <button type="button" class="nav-btn x" id="sheet-close" aria-label="Close">×</button>
+    </div>
+    <div class="sheet-body" id="sheet-body"></div>
+  </div>
+</div>
+
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button type="button" class="x" aria-label="Close">×</button>
+  <button type="button" class="prev" aria-label="Previous">‹</button>
+  <img src="" alt="">
+  <div class="cap"></div>
+  <button type="button" class="next" aria-label="Next">›</button>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

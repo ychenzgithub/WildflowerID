@@ -12,7 +12,7 @@ A photo guide for learning to identify wildflowers in California, garden and roa
 
 | Section | Content |
 | :--- | :--- |
-| Flowers · 花卉图鉴 | 61 flowers in three groups (33 California wildflowers, 15 garden and introduced flowers, 13 Canadian Rockies wildflowers) with 292 photos. Filter by region, colour, status (native, introduced, invasive, garden), family, or what is blooming this month. Each flower has a description, ID features, cautions for toxic plants, a bloom calendar and links. |
+| Flowers · 花卉图鉴 | 65 flowers in three groups (37 California wildflowers, 15 garden and introduced flowers, 13 Canadian Rockies wildflowers) with 312 photos. Filter by region, colour, status (native, introduced, invasive, garden), family, or what is blooming this month. Each flower has a description, ID features, cautions for toxic plants, a bloom calendar and links. |
 | Bloom calendar · 花期日历 | Month-by-month bloom chart for every flower, computed from iNaturalist observations annotated as flowering (California records, or the Banff, Jasper, Yoho, Kootenay and Waterton Lakes national parks for the Rockies). |
 | Look-alikes · 易混花卉 | 8 pairs that are easy to confuse (for example poison hemlock vs yarrow), compared point by point. |
 | Flower basics · 花的基础 | Diagrams of the parts of a flower, a daisy head, a pea flower and 8 inflorescence types, plus 12 plant families worth knowing. |

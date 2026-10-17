@@ -175,7 +175,6 @@
         <h4>${bi('Bloom calendar', '花期')}</h4>
         ${bloomBar(f, true)}
         <p class="src-note">${biO(C.bloomSrc[f.bloomSrc])}</p>
-        ${f.fix ? `<div class="note fix"><b>${bi('Correction to the original notes', '原笔记勘误')}</b>${biO(f.fix)}</div>` : ''}
         ${pairs ? `<div class="pair-links">${pairs}</div>` : ''}
         <div class="links">${f.links.map(l => `<a class="chip-link" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)} ↗</a>`).join('')}</div>
       </div>`;

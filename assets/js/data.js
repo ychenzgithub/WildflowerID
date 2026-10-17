@@ -1,5 +1,5 @@
 /**
- * Wildflower ID data: 61 flowers in three groups, with photos, bloom calendars and notes.
+ * Wildflower ID data: 65 flowers in three groups, with photos and bloom calendars.
  * bloom = relative share of flowering records per month (Jan..Dec, 0-100): iNaturalist observations in California
  * (bloomSrc "ca"), in the Banff/Jasper/Yoho/Kootenay/Waterton parks ("rockies"), or typical garden bloom ("garden").
  */
@@ -600,10 +600,6 @@ window.WF_DATA = {
      "zh": "触碰后散发浓郁的甜香"
     }
    ],
-   "fix": {
-    "en": "Chinese name: 藜 is goosefoot (Chenopodium), an unrelated plant; this is a cudweed (鼠曲草属).",
-    "zh": "中文名：“藜”是藜属（Chenopodium）植物，与本种无关；本种属于鼠曲草属，改为“加州鼠曲草”。"
-   },
    "links": [
     {
      "label": "Calscape",
@@ -907,10 +903,6 @@ window.WF_DATA = {
      "zh": "叶少而小，有 3–6 枚小叶"
     }
    ],
-   "fix": {
-    "en": "Other name \"California Bloom\" corrected to \"California broom\".",
-    "zh": "别名 “California Bloom” 更正为 “California broom”（加州金雀花）。"
-   },
    "links": [
     {
      "label": "Calscape",
@@ -1011,10 +1003,6 @@ window.WF_DATA = {
      "zh": "夏末至冬季，细小黄绿色头状花组成长花序"
     }
    ],
-   "fix": {
-    "en": "The original photo showed Russian sage (Perovskia), a garden plant, and was replaced. Chinese name: 鼠尾草 is Salvia; this plant is a sagebrush (蒿属).",
-    "zh": "原图是园艺植物俄罗斯鼠尾草（Perovskia），已替换。中文名：“鼠尾草”指鼠尾草属（Salvia），本种属于蒿属，改为“加州蒿”。"
-   },
    "links": [
     {
      "label": "Calscape",
@@ -1306,10 +1294,6 @@ window.WF_DATA = {
      "zh": "下垂的红色管状花，4 枚雄蕊长长伸出；浆果有刺毛"
     }
    ],
-   "fix": {
-    "en": "Chinese name: 金钟花 is Forsythia; a fuchsia is 倒挂金钟.",
-    "zh": "中文名：“金钟花”指连翘属植物，fuchsia 应译作“倒挂金钟”。"
-   },
    "links": [
     {
      "label": "Calscape",
@@ -1800,10 +1784,6 @@ window.WF_DATA = {
      "zh": "茎脆；植株呈半球形，高可达约 1.5 米"
     }
    ],
-   "fix": {
-    "en": "Name shortened to \"Brittlebush\". The other name \"California coast sunflower\" belongs to a different species, Encelia californica, which has green leaves and a dark centre.",
-    "zh": "名称改为 “Brittlebush”。别名 “California coast sunflower” 属于另一种植物加州恩氏菊（Encelia californica），其叶绿色、花心深色。"
-   },
    "links": [
     {
      "label": "Calscape",
@@ -2198,10 +2178,6 @@ window.WF_DATA = {
      "zh": "叶丝状细裂"
     }
    ],
-   "fix": {
-    "en": "Chinese name: 酢浆草 is wood-sorrel (Oxalis). Owl's clover is neither a clover nor an oxalis but a close relative of the paintbrushes (Castilleja).",
-    "zh": "中文名：“酢浆草”是酢浆草属（Oxalis）。猫头鹰草既不是三叶草也不是酢浆草，而是火焰草（Castilleja）的近亲，改为“紫花猫头鹰草”。"
-   },
    "links": [
     {
      "label": "Calscape",
@@ -3008,10 +2984,6 @@ window.WF_DATA = {
      "zh": "叶多基生，皱缩、深裂"
     }
    ],
-   "fix": {
-    "en": "\"Salvia columbariae\" was listed as an other name; it is the scientific name.",
-    "zh": "原“别名”一栏中的 Salvia columbariae 是学名，已移到学名处。"
-   },
    "links": [
     {
      "label": "Calscape",
@@ -3365,6 +3337,445 @@ window.WF_DATA = {
      "credit": "(c) James Bailey, some rights reserved (CC BY-NC)",
      "license": "CC BY-NC",
      "url": "https://www.inaturalist.org/photos/2978982"
+    }
+   ]
+  },
+  {
+   "id": "cleveland-sage",
+   "group": "ca",
+   "en": "Cleveland Sage",
+   "zh": "克利夫兰鼠尾草",
+   "other": "Jim sage, fragrant sage",
+   "sci": "Salvia clevelandii",
+   "family": "Lamiaceae",
+   "familyZh": "唇形科",
+   "familyEn": "Mint family",
+   "habit": "shrub",
+   "colors": [
+    "purple",
+    "blue"
+   ],
+   "status": "native",
+   "bloom": [
+    4,
+    43,
+    43,
+    66,
+    100,
+    87,
+    51,
+    15,
+    13,
+    6,
+    4,
+    4
+   ],
+   "bloomSrc": "ca",
+   "desc": {
+    "en": "An intensely fragrant evergreen shrub native to dry chaparral and coastal sage scrub of Southern California and northern Baja California. In late spring and early summer, it bears showy tiered whorls of amethyst-blue to violet two-lipped flowers along upright spikes. The wrinkly grey-green leaves are famously aromatic, releasing a rich herbal scent when brushed.",
+    "zh": "原产于南加州及下加利福尼亚北部干燥灌丛中的常绿灌木，香气极其浓郁。春末至初夏，直立的花茎上层层开出一轮轮紫蓝色的二唇形花。灰绿色皱褶对生叶片富含芳香精油，轻轻触碰便散发出浓烈的清香。"
+   },
+   "features": [
+    {
+     "en": "Tight rounded whorls of violet-blue flowers stacked along upright stems",
+     "zh": "紫蓝色花朵在直立花茎上排成一层层紧密的轮伞花序"
+    },
+    {
+     "en": "Textured, wrinkly grey-green leaves with an intensely sweet, herbal aroma",
+     "zh": "灰绿色皱褶叶片，揉搓散发极其浓郁清甜的草本香气"
+    },
+    {
+     "en": "Rounded drought-tolerant evergreen shrub (1–1.5 m) of Southern California",
+     "zh": "株高 1–1.5 米的耐旱常绿灌木，南加州山野代表物种"
+    }
+   ],
+   "links": [
+    {
+     "label": "Calscape",
+     "url": "https://calscape.org/loc-California/Salvia%20clevelandii?newsearch=1"
+    },
+    {
+     "label": "iNaturalist",
+     "url": "https://www.inaturalist.org/taxa/78966"
+    }
+   ],
+   "thumb": "assets/img/t/cleveland-sage.webp",
+   "photos": [
+    {
+     "src": "assets/img/p/cleveland-sage-1.webp",
+     "w": 1000,
+     "h": 750,
+     "credit": "(c) Ron Vanderhoff, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/181000753",
+     "taxon": "Salvia clevelandii"
+    },
+    {
+     "src": "assets/img/p/cleveland-sage-2.webp",
+     "w": 753,
+     "h": 1000,
+     "credit": "(c) Vince Scheidt, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/266939314",
+     "taxon": "Salvia clevelandii"
+    },
+    {
+     "src": "assets/img/p/cleveland-sage-3.webp",
+     "w": 1000,
+     "h": 750,
+     "credit": "(c) Lauren Glevanik, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/201703288",
+     "taxon": "Salvia clevelandii"
+    },
+    {
+     "src": "assets/img/p/cleveland-sage-4.webp",
+     "w": 750,
+     "h": 1000,
+     "credit": "(c) Michael Stein, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/174642916",
+     "taxon": "Salvia clevelandii"
+    },
+    {
+     "src": "assets/img/p/cleveland-sage-5.webp",
+     "w": 562,
+     "h": 1000,
+     "credit": "(c) tytograllistrix01, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/680320954",
+     "taxon": "Salvia clevelandii"
+    }
+   ]
+  },
+  {
+   "id": "california-fuchsia",
+   "group": "ca",
+   "en": "California Fuchsia",
+   "zh": "加州倒挂金钟",
+   "other": "Hummingbird trumpet, Zauschneria",
+   "sci": "Epilobium canum",
+   "sciNote": "syn. Zauschneria californica",
+   "family": "Onagraceae",
+   "familyZh": "柳叶菜科",
+   "familyEn": "Evening primrose family",
+   "habit": "subshrub",
+   "colors": [
+    "red",
+    "orange"
+   ],
+   "status": "native",
+   "bloom": [
+    7,
+    2,
+    2,
+    2,
+    4,
+    19,
+    54,
+    79,
+    95,
+    100,
+    63,
+    27
+   ],
+   "bloomSrc": "ca",
+   "desc": {
+    "en": "A drought-deciduous perennial subshrub celebrated for blazing into brilliant scarlet-orange bloom in late summer and autumn, precisely when most other California native wildflowers have finished flowering. The drooping, narrow tubular flowers produce abundant nectar and are a vital late-season food source for migrating hummingbirds. The narrow greyish foliage is adapted to hot, rocky slopes.",
+    "zh": "加州本土旱生多年生亚灌木，在夏末至深秋万物枯黄时开出满株鲜艳耀眼的猩红至橙红色喇叭状花，格外引人瞩目。下垂的细长花管内花蜜充沛，是秋季南迁蜂鸟至关重要的能量来源。狭长的灰绿色叶片耐旱性极强，常见于阳光充足的干旱岩石山坡。"
+   },
+   "features": [
+    {
+     "en": "Brilliant scarlet to orange-red tubular flowers with a long protruding style",
+     "zh": "猩红至橙红色长管状花，花柱长长伸出花冠"
+    },
+    {
+     "en": "Abundant late-season bloom (August to October), a premier hummingbird magnet",
+     "zh": "盛花期在夏末至深秋（8–10 月），是加州最重要的蜂鸟蜜源植物"
+    },
+    {
+     "en": "Low spreading subshrub with narrow, grey-green, drought-tolerant leaves",
+     "zh": "低矮蔓生的亚灌木，具有狭窄、灰绿色的耐旱叶片"
+    }
+   ],
+   "links": [
+    {
+     "label": "Calscape",
+     "url": "https://calscape.org/loc-California/Epilobium%20canum?newsearch=1"
+    },
+    {
+     "label": "iNaturalist",
+     "url": "https://www.inaturalist.org/taxa/53051"
+    }
+   ],
+   "thumb": "assets/img/t/california-fuchsia.webp",
+   "photos": [
+    {
+     "src": "assets/img/p/california-fuchsia-1.webp",
+     "w": 913,
+     "h": 833,
+     "credit": "(c) Don Rideout, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/52466490",
+     "taxon": "Epilobium canum"
+    },
+    {
+     "src": "assets/img/p/california-fuchsia-2.webp",
+     "w": 668,
+     "h": 1000,
+     "credit": "(c) Jeff Bisbee, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/423242718",
+     "taxon": "Epilobium canum"
+    },
+    {
+     "src": "assets/img/p/california-fuchsia-3.webp",
+     "w": 750,
+     "h": 1000,
+     "credit": "(c) bramble_and_vine, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/5363982",
+     "taxon": "Epilobium canum"
+    },
+    {
+     "src": "assets/img/p/california-fuchsia-4.webp",
+     "w": 917,
+     "h": 688,
+     "credit": "(c) Kat Halsey, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/314214600",
+     "taxon": "Epilobium canum"
+    },
+    {
+     "src": "assets/img/p/california-fuchsia-5.webp",
+     "w": 750,
+     "h": 1000,
+     "credit": "no rights reserved (CC0)",
+     "license": "CC0",
+     "url": "https://www.inaturalist.org/photos/333906520",
+     "taxon": "Epilobium canum"
+    }
+   ]
+  },
+  {
+   "id": "california-aster",
+   "group": "ca",
+   "en": "California Aster",
+   "zh": "加州紫菀",
+   "other": "Common California aster, sand aster, cudweed aster",
+   "sci": "Corethrogyne filaginifolia",
+   "sciNote": "syn. Lessingia filaginifolia",
+   "family": "Asteraceae",
+   "familyZh": "菊科",
+   "familyEn": "Daisy family",
+   "habit": "subshrub",
+   "colors": [
+    "purple",
+    "pink",
+    "yellow"
+   ],
+   "status": "native",
+   "bloom": [
+    14,
+    13,
+    10,
+    10,
+    11,
+    20,
+    46,
+    100,
+    80,
+    52,
+    25,
+    22
+   ],
+   "bloomSrc": "ca",
+   "desc": {
+    "en": "A hardy California native perennial of coastal bluffs, sand dunes and open chaparral slopes that blooms through summer into late autumn. Each flower head has slender lavender-to-pink ray florets surrounding a bright yellow central disc that darkens with age. The stems and leaves are covered in silvery, woolly hairs and tiny resin glands that give off a subtle scent.",
+    "zh": "加州本土菊科多年生亚灌木，广泛分布于海岸悬崖、沙丘及开阔灌丛中，花期从盛夏一直延续至深秋。每个头状花序边缘是淡紫至粉红色的细长舌状花，中央为金黄色管状花心（受粉后转暗）。茎叶密被银白色绵毛和微小腺毛，带有淡淡香气。"
+   },
+   "features": [
+    {
+     "en": "Daisy-like heads with lavender to violet rays around a golden-yellow disc",
+     "zh": "雏菊状头状花序，淡紫至紫红色舌状花包围金黄色管状花心"
+    },
+    {
+     "en": "Silvery grey-green foliage covered with woolly hairs and tiny resin glands",
+     "zh": "银灰绿色的枝叶，密被白色绵毛与微小树脂腺点"
+    },
+    {
+     "en": "Long bloom season extending from mid-summer through autumn (July–October)",
+     "zh": "超长后半段花期，从盛夏一直开到深秋（7–10 月）"
+    }
+   ],
+   "links": [
+    {
+     "label": "Calscape",
+     "url": "https://calscape.org/loc-California/Corethrogyne%20filaginifolia?newsearch=1"
+    },
+    {
+     "label": "iNaturalist",
+     "url": "https://www.inaturalist.org/taxa/58014"
+    }
+   ],
+   "thumb": "assets/img/t/california-aster.webp",
+   "photos": [
+    {
+     "src": "assets/img/p/california-aster-1.webp",
+     "w": 1000,
+     "h": 667,
+     "credit": "(c) Ken-ichi Ueda, some rights reserved (CC BY)",
+     "license": "CC-BY",
+     "url": "https://www.inaturalist.org/photos/933748",
+     "taxon": "Corethrogyne filaginifolia"
+    },
+    {
+     "src": "assets/img/p/california-aster-2.webp",
+     "w": 750,
+     "h": 1000,
+     "credit": "(c) Alex Binck, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/300463370",
+     "taxon": "Corethrogyne filaginifolia"
+    },
+    {
+     "src": "assets/img/p/california-aster-3.webp",
+     "w": 750,
+     "h": 1000,
+     "credit": "(c) Matt Guilliams, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/572762384",
+     "taxon": "Corethrogyne filaginifolia"
+    },
+    {
+     "src": "assets/img/p/california-aster-4.webp",
+     "w": 562,
+     "h": 1000,
+     "credit": "(c) yerbasanta, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/391004182",
+     "taxon": "Corethrogyne filaginifolia"
+    },
+    {
+     "src": "assets/img/p/california-aster-5.webp",
+     "w": 750,
+     "h": 1000,
+     "credit": "no rights reserved (CC0)",
+     "license": "CC0",
+     "url": "https://www.inaturalist.org/photos/257663867",
+     "taxon": "Corethrogyne filaginifolia"
+    }
+   ]
+  },
+  {
+   "id": "toyon",
+   "group": "ca",
+   "en": "Toyon",
+   "zh": "圣诞莓",
+   "other": "California holly, Christmas berry",
+   "sci": "Heteromeles arbutifolia",
+   "family": "Rosaceae",
+   "familyZh": "蔷薇科",
+   "familyEn": "Rose family",
+   "habit": "shrub",
+   "colors": [
+    "white",
+    "red"
+   ],
+   "status": "native",
+   "bloom": [
+    3,
+    3,
+    7,
+    10,
+    20,
+    100,
+    100,
+    35,
+    16,
+    5,
+    5,
+    4
+   ],
+   "bloomSrc": "ca",
+   "desc": {
+    "en": "The official native plant of the city of Los Angeles, Toyon is a prominent evergreen shrub or small tree of California chaparral and oak woodlands. In early summer, it is covered in flat-topped clusters of small white 5-petalled flowers. By late autumn and winter, these give way to masses of bright scarlet berries that feed cedar waxwings, robins and mockingbirds throughout the dry winter months.",
+    "zh": "洛杉矶市的官方本土植物，加州查帕拉尔灌丛与橡树林中最具代表性的常绿大灌木或小乔木。初夏时分，枝头盛开平顶簇生的白色五瓣小花；深秋至冬季则挂满一串串鲜艳红艳的浆果状梨果，成为知更鸟、雪松太平鸟等冬候鸟赖以生存的关键口粮。"
+   },
+   "features": [
+    {
+     "en": "Leathery, dark green evergreen leaves with sharp, bristle-tipped teeth",
+     "zh": "深绿色革质常绿叶片，边缘有清晰尖锐的锯齿"
+    },
+    {
+     "en": "Dense flat-topped clusters of small white 5-petalled flowers in June–July",
+     "zh": "6–7 月盛开平顶密集成簇的白色五瓣小花"
+    },
+    {
+     "en": "Spectacular bunches of bright red winter berries that persist into the new year",
+     "zh": "秋冬季节挂满枝头的红艳浆果，经冬不落"
+    }
+   ],
+   "warn": {
+    "en": "Raw berries contain traces of cyanide-inducing compounds; safe for birds, but should not be eaten in quantity by humans raw.",
+    "zh": "生浆果含微量可释放氰化物的成分；鸟类可安全食用，人类不宜大量生食。"
+   },
+   "links": [
+    {
+     "label": "Calscape",
+     "url": "https://calscape.org/loc-California/Heteromeles%20arbutifolia?newsearch=1"
+    },
+    {
+     "label": "iNaturalist",
+     "url": "https://www.inaturalist.org/taxa/53405"
+    }
+   ],
+   "thumb": "assets/img/t/toyon.webp",
+   "photos": [
+    {
+     "src": "assets/img/p/toyon-1.webp",
+     "w": 1000,
+     "h": 664,
+     "credit": "(c) Diego Tamayo, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/44294469",
+     "taxon": "Heteromeles arbutifolia"
+    },
+    {
+     "src": "assets/img/p/toyon-2.webp",
+     "w": 1000,
+     "h": 750,
+     "credit": "(c) Kat Halsey, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/78013783",
+     "taxon": "Heteromeles arbutifolia"
+    },
+    {
+     "src": "assets/img/p/toyon-3.webp",
+     "w": 750,
+     "h": 1000,
+     "credit": "no rights reserved (CC0)",
+     "license": "CC0",
+     "url": "https://www.inaturalist.org/photos/295253801",
+     "taxon": "Heteromeles arbutifolia"
+    },
+    {
+     "src": "assets/img/p/toyon-4.webp",
+     "w": 1000,
+     "h": 655,
+     "credit": "(c) sciencebabe, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/30589791",
+     "taxon": "Heteromeles arbutifolia"
+    },
+    {
+     "src": "assets/img/p/toyon-5.webp",
+     "w": 1000,
+     "h": 1000,
+     "credit": "(c) Matthew Ferretti, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/249376821",
+     "taxon": "Heteromeles arbutifolia"
     }
    ]
   },
@@ -4217,10 +4628,6 @@ window.WF_DATA = {
      "zh": "结扁平长蒴果，而不是忍冬那样的浆果"
     }
    ],
-   "fix": {
-    "en": "\"Tecoma capensis\" was listed as an other name; it is the scientific name. Chinese name converted to simplified characters.",
-    "zh": "原“别名”一栏中的 Tecoma capensis 是学名，已移到学名处；中文名改为简体。"
-   },
    "links": [
     {
      "label": "Wikipedia",
@@ -4424,10 +4831,6 @@ window.WF_DATA = {
      "zh": "花萼有黏毛；叶浅绿、长圆形"
     }
    ],
-   "fix": {
-    "en": "The scientific name and other names were all in the other-names field; separated.",
-    "zh": "原“别名”一栏混入了学名，已分开整理。"
-   },
    "links": [
     {
      "label": "Wikipedia",
@@ -4737,10 +5140,6 @@ window.WF_DATA = {
    "warn": {
     "en": "All parts are poisonous (they contain the alkaloid anabasine); people have died after cooking the leaves as greens.",
     "zh": "全株有毒（含新烟碱 anabasine），曾有人把叶子当野菜煮食而中毒死亡。"
-   },
-   "fix": {
-    "en": "Spelling: \"Tree Tabacco\" corrected to \"Tree Tobacco\".",
-    "zh": "拼写：“Tree Tabacco” 更正为 “Tree Tobacco”。"
    },
    "links": [
     {
@@ -5246,10 +5645,6 @@ window.WF_DATA = {
      "zh": "植株低矮（5–25 厘米），在融雪边开花"
     }
    ],
-   "fix": {
-    "en": "The notes linked Ranunculus adoneus, an alpine buttercup of the US Rockies (Colorado, Wyoming, Utah) that does not reach Canada. The look-alike that grows in the Canadian Rockies, R. eschscholtzii, is used here.",
-    "zh": "原笔记链接的是 Ranunculus adoneus，它分布在美国落基山（科罗拉多、怀俄明、犹他等），并不生长在加拿大。这里换成加拿大落基山常见、外形相近的 R. eschscholtzii。"
-   },
    "links": [
     {
      "label": "Wikipedia",
@@ -5300,9 +5695,12 @@ window.WF_DATA = {
     },
     {
      "src": "assets/img/p/alpine-buttercup-5.webp",
-     "w": 267,
-     "h": 183,
-     "credit": "Notes collection"
+     "w": 1000,
+     "h": 750,
+     "credit": "(c) Will Richardson, some rights reserved (CC BY-NC)",
+     "license": "CC-BY-NC",
+     "url": "https://www.inaturalist.org/photos/11444977",
+     "taxon": "Ranunculus eschscholtzii"
     }
    ]
   },
@@ -5457,10 +5855,6 @@ window.WF_DATA = {
      "zh": "初夏至盛夏开花；紫菀开得较晚"
     }
    ],
-   "fix": {
-    "en": "Renamed from \"Daisy\" (雏菊, Bellis perennis): the photo shows a fleabane (Erigeron, 飞蓬属).",
-    "zh": "原名 “Daisy／雏菊”（雏菊是 Bellis perennis），但照片是飞蓬属（Erigeron），已改名。"
-   },
    "links": [
     {
      "label": "Wikipedia",
@@ -5671,10 +6065,6 @@ window.WF_DATA = {
    "warn": {
     "en": "Many Senecio species contain pyrrolizidine alkaloids and are toxic to livestock.",
     "zh": "许多千里光属植物含吡咯里西啶生物碱，对牲畜有毒。"
-   },
-   "fix": {
-    "en": "Chinese name: 狗舌草 is Tephroseris, now a separate genus; Senecio is 千里光属.",
-    "zh": "中文名：“狗舌草”是狗舌草属（Tephroseris），现已从千里光属分出；Senecio 应为“千里光”。"
    },
    "links": [
     {
@@ -6069,10 +6459,6 @@ window.WF_DATA = {
      "zh": "叶披针形、有齿，茎低矮铺散"
     }
    ],
-   "fix": {
-    "en": "Chinese name: 翠菊 is the China aster (Callistephus); this is a true aster relative, 紫菀.",
-    "zh": "中文名：“翠菊”是翠菊属（Callistephus）；本种是紫菀类植物，改为“北极紫菀”。"
-   },
    "links": [
     {
      "label": "Wikipedia",
@@ -6176,10 +6562,6 @@ window.WF_DATA = {
    "warn": {
     "en": "Raw berries, seeds, leaves and stems are toxic to people (they contain compounds that release cyanide).",
     "zh": "生的果实、种子、叶和茎对人有毒（含可释放氰化物的成分），切勿生食。"
-   },
-   "fix": {
-    "en": "The original picture was a blog banner with text over it and was replaced.",
-    "zh": "原图是带文字的博客横幅，已替换。"
    },
    "links": [
     {
